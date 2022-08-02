@@ -1,6 +1,6 @@
 import os
 
-#Color variations
+#List of folders that's gonna be created 
 dir_list = ['17640755',
            '17593555',
            '16869934',
