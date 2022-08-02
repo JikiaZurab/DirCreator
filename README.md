@@ -1,0 +1,2 @@
+# DirCreator
+Automates folder creation
