@@ -1,29 +1,21 @@
 import os
 
 #List of folders that's gonna be created 
-dir_list = ['17640755',
-           '17593555',
-           '16869934',
-           '15737113',
-           '16928431',
-           '16867075',
-           '15737114',
-           '16414990',
-           '15679788',
-           '18689746',
-           '17640770',
-           '16445773',
-           '17404501']
+dir_list = ['14697228',
+           '14697155',
+           '17258333']
 
 #Folder path (use double slash \\ between folders)
-parent_dir = f"F:\\PC\\Work\\Job alphaar.io\\3D Artist\\Autry Medalist\\Variations"
+parent_dir = f"F:\\PC\\Work\\Job alphaar.io\\3D Artist\\Burberry logo-print Vintage"
+parent_dir = os.path.join(parent_dir,"Variation")
+os.makedirs(parent_dir, exist_ok=True)
 
 def AddAdditionalDir(path):
     try:
         os.makedirs(os.path.join(path, "Left"), exist_ok=True)
         os.makedirs(os.path.join(path, "Right"), exist_ok=True)
     except OSError as error2:
-        print('We have an issue')
+        print('We have an issue with inner directory')
 
 def AddInnerDir(path, dir):
     try:
@@ -33,7 +25,7 @@ def AddInnerDir(path, dir):
         os.makedirs(os.path.join(path, dir), exist_ok=True)
         AddAdditionalDir(os.path.join(path, dir))
     except OSError as error:
-        print('We have an issue')
+        print('We have an issue with main directories')
 
 for dir in dir_list:
     path = os.path.join(parent_dir, dir)
