@@ -1,12 +1,11 @@
 import os
 
 #List of folders that's gonna be created 
-dir_list = ['14697228',
-           '14697155',
-           '17258333']
+dir_list = ['15843172']
 
 #Folder path (use double slash \\ between folders)
-parent_dir = f"F:\\PC\\Work\\Job alphaar.io\\3D Artist\\Burberry logo-print Vintage"
+parent_dir = f"D:\\PC\\Work\\Job alphaar.io\\3D Artist\\Cariuma CATIBA PRO Skate"
+os.makedirs(os.path.join(parent_dir,"Ref"), exist_ok=True)
 parent_dir = os.path.join(parent_dir,"Variation")
 os.makedirs(parent_dir, exist_ok=True)
 
