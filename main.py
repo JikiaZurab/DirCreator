@@ -1,7 +1,11 @@
 import os
 
 #List of folders that's gonna be created 
-dir_list = ['15843172']
+dir_list = ['15843198',
+            '15843179',
+            '16800150',
+            '16798765',
+            '15843196',]
 
 #Folder path (use double slash \\ between folders)
 parent_dir = f"D:\\PC\\Work\\Job alphaar.io\\3D Artist\\Cariuma CATIBA PRO Skate"
